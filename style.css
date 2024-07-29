@@ -1,0 +1,353 @@
+body {
+    font-family: 'Arial', sans-serif;
+	padding-top: 70px; /* Adjust to the height of your navbar */
+}
+
+    .hero-section {
+         background: url('./image/coffeeback2.jpeg') no-repeat center center;
+    background-size: cover;
+    padding: 150px 0;
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+	}
+
+    .animate-text {
+        animation: fadeInUp 2s ease-out 0s 1 forwards;
+    }
+
+    .animate-subtext {
+        animation: fadeInUp 2s ease-out 0.5s 1 forwards;
+    }
+
+    .animate-button {
+        animation: fadeInUp 2s ease-out 1s 1 forwards;
+    }
+
+    @keyframes fadeInUp {
+        0% {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+.hero-section h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: rgb(144, 12, 63);
+}
+
+.hero-section p {
+    font-size: 1.25rem;
+    color: rgb(255, 255, 255);
+}
+
+.hero-section .btn-primary {
+    background-color: rgb(144, 12, 63);
+    border-color: rgb(144, 12, 63);
+}
+
+
+
+    .navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        /*background: linear-gradient(to right, rgba(144, 12, 63, 0.8), rgba(90, 6, 40, 0.8));
+        backdrop-filter: blur(5px);*/
+        z-index: 1000;
+        transition: background 0.3s ease;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar-nav .nav-link {
+        position: relative;
+        padding: 8px 12px;
+        transition: color 0.3s ease;
+    }
+
+    .navbar-nav .nav-link:hover {
+        color: #ffc107; /* Change text color on hover */
+    }
+
+    .navbar-nav .nav-link::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #ffc107;
+        transform: scaleX(0);
+        transition: transform 0.3s ease;
+    }
+
+    .navbar-nav .nav-link:hover::after {
+        transform: scaleX(1);
+    }
+
+    .navbar-brand img {
+        transition: transform 0.3s ease;
+    }
+
+    .navbar-brand:hover img {
+        transform: rotate(360deg);
+    }
+
+#import {
+    position: relative;
+    background: url('./image/Datacenter.jpeg') no-repeat center center;
+    background-size: cover;
+    padding: 60px 0;
+    color: rgb(144, 12, 63);
+}
+
+#import .container {
+    position: relative;
+    z-index: 2;
+}
+
+#import h2 {
+   margin-bottom: 30px;
+    background-color: rgb(182, 81, 60);
+    color: black;
+    padding: 10px 0;
+}
+
+#import .card {
+   /* background-color: rgba(255, 255, 255, 0.9);*/
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+#import .card:hover {
+    transform: translateY(-10px);
+}
+
+#import .card-title {
+    color: rgb(144, 12, 63);
+}
+
+#import .card-text {
+    color: rgb(90, 6, 40);
+}
+
+
+#export {
+    position: relative;
+    background: url('./image/coffeeback3.jpeg') no-repeat center center;
+    background-size: cover;
+    padding: 60px 0;
+    color: rgb(144, 12, 63);
+}
+
+#export h2 {
+   margin-bottom: 30px;
+    background-color: rgb(182, 81, 60);
+    color: black;
+    padding: 10px 0;
+}
+
+#export .card-hover {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+#export .card-hover:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    }
+
+
+#client {
+    position: relative;
+    background: url('./image/coffeg1.jpeg') no-repeat center center;
+    background-size: cover;
+    padding: 60px 0;
+    color: rgb(144, 12, 63);
+}
+
+#client .container {
+    position: relative;
+    z-index: 2;
+}
+
+#client h2 {
+    margin-bottom: 30px;
+    background-color: rgb(137, 65, 50);
+    color: black;
+    padding: 10px 0;
+}
+
+#client .card {
+   background-color: rgba(255, 255, 255, 0.9);
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+#client .card:hover {
+    transform: translateY(-10px);
+}
+
+#client .card-title {
+    color: rgb(144, 12, 63);
+}
+
+#client .card-text {
+    color: rgb(90, 6, 40);
+}
+
+#staff {
+    position: relative;
+    background: url('./image/Datacenter.jpeg') no-repeat center center;
+    background-size: cover;
+    padding: 60px 0;
+    color: rgb(144, 12, 63);
+}
+
+#staff .container {
+    position: relative;
+    z-index: 2;
+}
+
+#staff h2 {
+    /*margin-bottom: 30px;*/
+	margin-bottom: 30px;
+    background-color: rgb(182, 81, 60);
+    color: black;
+    padding: 10px 0;
+}
+
+#staff .card {
+   /* background-color: rgba(255, 255, 255, 0.9);*/
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+#staff .card:hover {
+    transform: translateY(-10px);
+}
+
+#staff .card-title {
+    color: rgb(144, 12, 63);
+}
+
+#staff .card-text {
+    color: rgb(90, 6, 40);
+}
+
+#staff  .image-holder {
+        width: 150px;
+        height: 150px;
+        overflow: hidden;
+        border-radius: 50%;
+        margin-bottom: 15px;
+    }
+    
+#staff   .card-img-top {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+#about {
+    position: relative;
+    /*background: url('./image/coffeg1.jpeg') no-repeat center center;*/
+    background-size: cover;
+    padding: 60px 0;
+}
+
+#about::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+   /*background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);*/
+    z-index: 1;
+}
+
+#about .container {
+    position: relative;
+    z-index: 2;
+}
+
+#about h2 {
+   margin-bottom: 30px;
+    background-color: rgb(182, 81, 60);
+    color: black;
+    padding: 10px 0;
+}
+
+#about p {
+    color: rgb(90, 6, 40);
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+
+
+
+#contact {
+    position: relative;
+    /*background: url('./image/coffeg1.jpeg') no-repeat center center;*/
+    background-size: cover;
+    padding: 60px 0;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+   /*background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);*/
+    z-index: 1;
+}
+
+#contact .container {
+    position: relative;
+    z-index: 2;
+}
+
+#contact h2 {
+   margin-bottom: 30px;
+    background-color: rgb(182, 81, 60);
+    color: black;
+    padding: 10px 0;
+}
+
+#contact p {
+    color: rgb(90, 6, 40);
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+#footer {
+    position: relative;
+    background-size: cover;
+    padding: 60px 0;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #ffc107;
+}
+
+.social-icons a {
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ffc107;
+}
